@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cks0wxiak7sjt"]
+
+[node name="Ball" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

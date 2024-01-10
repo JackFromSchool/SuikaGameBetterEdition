@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://brfvegxhku2cd"]
+
+[node name="Physics Area" type="Area2D"]
