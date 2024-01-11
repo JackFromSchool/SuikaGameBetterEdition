@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://tc6tlxfc5b32"]
+[gd_scene load_steps=4 format=3 uid="uid://tc6tlxfc5b32"]
+
+[ext_resource type="PackedScene" uid="uid://co681qg3ov2gi" path="res://ui.tscn" id="1_w6oxc"]
+[ext_resource type="PackedScene" uid="uid://brfvegxhku2cd" path="res://physics_area.tscn" id="2_7ybjf"]
+[ext_resource type="PackedScene" uid="uid://7ee4p0ndbcor" path="res://player.tscn" id="3_ew222"]
 
 [node name="Main" type="Node"]
+
+[node name="UI" parent="." instance=ExtResource("1_w6oxc")]
+
+[node name="Walls" parent="." instance=ExtResource("2_7ybjf")]
+
+[node name="Player" parent="." instance=ExtResource("3_ew222")]
