@@ -8,7 +8,13 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var hasFruit = false
 @export var FruitScene: PackedScene
 
+func _ready():
+	set_visible(false)
+
 func _physics_process(delta):
+	
+	if not is_visible():
+		return
 	
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
@@ -33,3 +39,6 @@ func spawnFruit():
 	
 	newFruit.level = 1
 
+func start():
+	set_visible(true)
+	# Run when the player begins the game

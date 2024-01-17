@@ -1,53 +1,52 @@
-[gd_scene load_steps=3 format=3 uid="uid://brfvegxhku2cd"]
+[gd_scene load_steps=4 format=3 uid="uid://brfvegxhku2cd"]
 
+[ext_resource type="Script" path="res://physics_area.gd" id="1_1b23c"]
 [ext_resource type="Texture2D" uid="uid://crc427fnjolsl" path="res://Images/istockphoto-1393065816-612x612.jpg" id="1_usg0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s68g"]
 size = Vector2(500, 20)
 
-[node name="Walls" type="Node"]
+[node name="Walls" type="Node2D"]
+script = ExtResource("1_1b23c")
 
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(125, 0)
-
-[node name="Floor" type="RigidBody2D" parent="Node2D"]
-position = Vector2(251, 740)
+[node name="Floor" type="RigidBody2D" parent="."]
+position = Vector2(376, 740)
 gravity_scale = 0.0
 freeze = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/Floor"]
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
 scale = Vector2(0.8, 0.05)
 texture = ExtResource("1_usg0q")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Floor"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
 shape = SubResource("RectangleShape2D_1s68g")
 
-[node name="Right Wall" type="RigidBody2D" parent="Node2D"]
-position = Vector2(10, 375)
+[node name="Right Wall" type="RigidBody2D" parent="."]
+position = Vector2(135, 375)
 gravity_scale = 0.0
 freeze = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/Right Wall"]
+[node name="Sprite2D" type="Sprite2D" parent="Right Wall"]
 rotation = 1.5708
 scale = Vector2(1.25, 0.05)
 texture = ExtResource("1_usg0q")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Right Wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
-[node name="Left Wall" type="RigidBody2D" parent="Node2D"]
-position = Vector2(490, 375)
+[node name="Left Wall" type="RigidBody2D" parent="."]
+position = Vector2(615, 375)
 gravity_scale = 0.0
 freeze = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/Left Wall"]
+[node name="Sprite2D" type="Sprite2D" parent="Left Wall"]
 rotation = 1.5708
 scale = Vector2(1.25, 0.05)
 texture = ExtResource("1_usg0q")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Left Wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left Wall"]
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
