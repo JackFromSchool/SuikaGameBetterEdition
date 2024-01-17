@@ -34,5 +34,5 @@ func spawnFruit():
 	var new_velocity = Vector2(50, 0)
 	
 	newFruit.linear_velocity = new_velocity.rotated(randf_range(4.71 - .2, 4.71 + .2))
-	
+	print("hello")
 	newFruit.level = 1
