@@ -1,18 +1,7 @@
-extends RigidBody2D
-
-@export var FruitList: PackedStringArray 
-
+extends RigidBody2D 
 
 var level = 1
-
-var types=[1,2,3,4,5,6,7,8,9]
-var sizes=[
-	1,
-	1.25
-	
-	
-]
-
+@export var FruitScene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,12 +13,6 @@ func _process(delta):
 
 
 func _on_body_entered(body):
+	print("hit1")
 	if(body.get_groups().has("SpawnedFruit") && (body.level == level)):
-		level += 1
-		body.queue_free()
-		levelUp()
-		print(level)
-
-func levelUp():
-	print("I got here")
-	scale = Vector2(scale.x*2, scale.y*2)
+		get_parent().dualInputDelay(FruitScene.instantiate(), body, self)
