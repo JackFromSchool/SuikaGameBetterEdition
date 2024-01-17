@@ -1,20 +1,39 @@
-[gd_scene load_steps=4 format=3 uid="uid://cks0wxiak7sjt"]
+[gd_scene load_steps=7 format=3 uid="uid://cks0wxiak7sjt"]
 
 [ext_resource type="Script" path="res://ball.gd" id="1_fxrpc"]
-[ext_resource type="Texture2D" uid="uid://7spvoth4vqqf" path="res://Images/New Piskel-1.png.png" id="1_mwrav"]
+[ext_resource type="Texture2D" path="res://fruits/1.png" id="2_1ppyv"]
+[ext_resource type="Texture2D" path="res://fruits/2.png" id="2_5f6fh"]
+[ext_resource type="Texture2D" path="res://fruits/3.png" id="4_wj8cq"]
+[ext_resource type="Texture2D" path="res://fruits/4.png" id="5_kkkek"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
+radius = 28.1603
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
-max_contacts_reported = 10
-contact_monitor = true
 script = ExtResource("1_fxrpc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(53, 60)
 shape = SubResource("CircleShape2D_labvx")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, 1)
-texture = ExtResource("1_mwrav")
+[node name="strawberry" type="Sprite2D" parent="."]
+position = Vector2(53.25, 57.75)
+scale = Vector2(0.103, 0.109)
+texture = ExtResource("2_1ppyv")
+
+[node name="grape" type="Sprite2D" parent="."]
+position = Vector2(169, 68)
+scale = Vector2(0.207, 0.208)
+texture = ExtResource("2_5f6fh")
+
+[node name="orange" type="Sprite2D" parent="."]
+position = Vector2(85, 193)
+scale = Vector2(0.252, 0.264)
+texture = ExtResource("4_wj8cq")
+
+[node name="apple" type="Sprite2D" parent="."]
+position = Vector2(222, 200)
+scale = Vector2(0.35, 0.378)
+texture = ExtResource("5_kkkek")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
