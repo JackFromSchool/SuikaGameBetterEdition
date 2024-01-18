@@ -13,6 +13,5 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	print("hit1")
 	if(body.get_groups().has("SpawnedFruit") && (body.level == level)):
 		get_parent().dualInputDelay(FruitScene.instantiate(), body, self)

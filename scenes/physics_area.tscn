@@ -11,6 +11,8 @@ script = ExtResource("1_1b23c")
 
 [node name="Floor" type="RigidBody2D" parent="."]
 position = Vector2(376, 740)
+collision_layer = 3
+collision_mask = 3
 gravity_scale = 0.0
 freeze = true
 
@@ -23,6 +25,8 @@ shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Right Wall" type="RigidBody2D" parent="."]
 position = Vector2(135, 375)
+collision_layer = 3
+collision_mask = 3
 gravity_scale = 0.0
 freeze = true
 
@@ -38,6 +42,7 @@ shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Left Wall" type="RigidBody2D" parent="."]
 position = Vector2(615, 375)
+collision_layer = 3
 gravity_scale = 0.0
 freeze = true
 
