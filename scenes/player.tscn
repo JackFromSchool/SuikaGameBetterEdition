@@ -12,7 +12,7 @@ size = Vector2(25, 25)
 [sub_resource type="CircleShape2D" id="CircleShape2D_bk61j"]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(249, 43)
+position = Vector2(960, 100)
 script = ExtResource("1_kc0xl")
 FruitScene = ExtResource("2_n4ot5")
 

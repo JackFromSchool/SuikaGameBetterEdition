@@ -9,8 +9,8 @@ script = ExtResource("1_g3hr7")
 visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_right = 750.0
-offset_bottom = 750.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 
 [node name="GameStart" type="Button" parent="MainMenu"]
 layout_mode = 1
@@ -59,10 +59,11 @@ grow_horizontal = 2
 text = "but better!"
 
 [node name="Countdown" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_right = 750.0
-offset_bottom = 750.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 
 [node name="GameStart" type="Label" parent="Countdown"]
 layout_mode = 1
@@ -85,15 +86,15 @@ wait_time = 3.0
 [node name="HUD" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 750.0
-offset_bottom = 750.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 
 [node name="Score" type="Label" parent="HUD"]
 layout_mode = 0
-offset_left = 640.0
-offset_top = 40.0
-offset_right = 680.0
-offset_bottom = 63.0
+offset_left = 1400.0
+offset_top = 50.0
+offset_right = 1440.0
+offset_bottom = 73.0
 text = "0"
 
 [node name="ScoreLabel" type="Label" parent="HUD/Score"]

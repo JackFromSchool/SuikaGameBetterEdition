@@ -7,10 +7,12 @@
 size = Vector2(500, 20)
 
 [node name="Walls" type="Node2D"]
+position = Vector2(960, 540)
+scale = Vector2(1.4, 1.4)
 script = ExtResource("1_1b23c")
 
 [node name="Floor" type="RigidBody2D" parent="."]
-position = Vector2(376, 740)
+position = Vector2(0, 365)
 gravity_scale = 0.0
 freeze = true
 
@@ -22,13 +24,14 @@ texture = ExtResource("1_usg0q")
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Right Wall" type="RigidBody2D" parent="."]
-position = Vector2(135, 375)
+position = Vector2(250, 0)
 gravity_scale = 0.0
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Right Wall"]
+position = Vector2(-5.43012e-06, 1.50004)
 rotation = 1.5708
-scale = Vector2(1.25, 0.05)
+scale = Vector2(1.21569, 0.05)
 texture = ExtResource("1_usg0q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
@@ -37,13 +40,14 @@ scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Left Wall" type="RigidBody2D" parent="."]
-position = Vector2(615, 375)
+position = Vector2(-250, 0)
 gravity_scale = 0.0
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Left Wall"]
+position = Vector2(-3.62005e-06, 1.00002)
 rotation = 1.5708
-scale = Vector2(1.25, 0.05)
+scale = Vector2(1.22059, 0.05)
 texture = ExtResource("1_usg0q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Left Wall"]
