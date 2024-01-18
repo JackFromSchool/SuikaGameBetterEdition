@@ -9,8 +9,18 @@ func _ready():
 	$MainMenu.show()
 
 func _process(delta):
-	pass
+	if $Countdown.visible:
+		$Countdown/GameStart.text = str(ceilf($Countdown/GameStartTimer.time_left))
 
 func _on_game_start_pressed():
-	game_start.emit()
 	$MainMenu.hide()
+	$Countdown.show()
+	$Countdown/GameStartTimer.start()
+
+func _on_game_start_timer_timeout():
+	$Countdown.hide()
+	$HUD.show()
+	game_start.emit()
+
+func update_score(score: int):
+	$HUD/Score.text = str(score)

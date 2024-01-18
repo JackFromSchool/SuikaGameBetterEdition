@@ -15,13 +15,18 @@ func _physics_process(delta):
 	if not is_visible():
 		return
 	
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Vector2.ZERO
+	if Input.is_action_pressed("left"):
+		direction.x -= 1
+	if Input.is_action_pressed("right"):
+		direction.x += 1
+	
 	if direction:
-		velocity.x = direction * SPEED
+		velocity = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
-	if(Input.get_axis("ui_up", "ui_down") && fruitReady):
+	if(Input.is_action_pressed("drop") && fruitReady):
 		spawnFruit()
 		fruitReady = false
 		await get_tree().create_timer(1.0).timeout

@@ -14,9 +14,5 @@ func _process(delta):
 func _on_ui_game_start():
 	score = 0
 	$Walls.start()
-	
-	$GameStartTimer.start()
-	await $GameStartTimer.timeout
-	
 	$Player.start()
 	

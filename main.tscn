@@ -14,8 +14,4 @@ script = ExtResource("1_fgrn6")
 
 [node name="Player" parent="." instance=ExtResource("3_ew222")]
 
-[node name="GameStartTimer" type="Timer" parent="."]
-wait_time = 3.0
-one_shot = true
-
 [connection signal="game_start" from="UI" to="." method="_on_ui_game_start"]
