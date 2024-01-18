@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cks0wxiak7sjt"]
 
-[ext_resource type="Script" path="res://ball.gd" id="1_fxrpc"]
-[ext_resource type="Texture2D" uid="uid://7spvoth4vqqf" path="res://Images/New Piskel-1.png.png" id="1_mwrav"]
+[ext_resource type="Script" path="res://scripts/ball.gd" id="1_fxrpc"]
+[ext_resource type="Texture2D" uid="uid://7spvoth4vqqf" path="res://assets/Images/New Piskel-1.png.png" id="1_mwrav"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
 

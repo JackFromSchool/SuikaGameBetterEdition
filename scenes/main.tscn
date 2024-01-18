@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://tc6tlxfc5b32"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_fgrn6"]
-[ext_resource type="PackedScene" uid="uid://co681qg3ov2gi" path="res://ui.tscn" id="1_w6oxc"]
-[ext_resource type="PackedScene" uid="uid://brfvegxhku2cd" path="res://physics_area.tscn" id="2_7ybjf"]
-[ext_resource type="PackedScene" uid="uid://7ee4p0ndbcor" path="res://player.tscn" id="3_ew222"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_fgrn6"]
+[ext_resource type="PackedScene" uid="uid://co681qg3ov2gi" path="res://scenes/ui.tscn" id="1_w6oxc"]
+[ext_resource type="PackedScene" uid="uid://brfvegxhku2cd" path="res://scenes/physics_area.tscn" id="2_7ybjf"]
+[ext_resource type="PackedScene" uid="uid://7ee4p0ndbcor" path="res://scenes/player.tscn" id="3_ew222"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fgrn6")

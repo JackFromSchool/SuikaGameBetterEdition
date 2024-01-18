@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://brfvegxhku2cd"]
 
-[ext_resource type="Script" path="res://physics_area.gd" id="1_1b23c"]
-[ext_resource type="Texture2D" uid="uid://crc427fnjolsl" path="res://Images/istockphoto-1393065816-612x612.jpg" id="1_usg0q"]
+[ext_resource type="Script" path="res://scripts/physics_area.gd" id="1_1b23c"]
+[ext_resource type="Texture2D" uid="uid://crc427fnjolsl" path="res://assets/Images/istockphoto-1393065816-612x612.jpg" id="1_usg0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s68g"]
 size = Vector2(500, 20)
