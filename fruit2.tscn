@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyfpoohh7weai"]
+
+[ext_resource type="Script" path="res://ball.gd" id="1_mu0jd"]
+[ext_resource type="Texture2D" uid="uid://c1tshs1utthvi" path="res://fruits/2.png" id="2_iq84c"]
+[ext_resource type="PackedScene" uid="uid://vouq1pjdwihp" path="res://fruit3.tscn" id="2_x77vg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
+
+[node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
+max_contacts_reported = 10
+contact_monitor = true
+script = ExtResource("1_mu0jd")
+FruitScene = ExtResource("2_x77vg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_labvx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_iq84c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
