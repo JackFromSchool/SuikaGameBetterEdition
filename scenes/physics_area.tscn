@@ -7,10 +7,12 @@
 size = Vector2(500, 20)
 
 [node name="Walls" type="Node2D"]
+position = Vector2(960, 540)
+scale = Vector2(1.4, 1.4)
 script = ExtResource("1_1b23c")
 
 [node name="Floor" type="RigidBody2D" parent="."]
-position = Vector2(376, 740)
+position = Vector2(0, 365)
 collision_layer = 3
 collision_mask = 3
 gravity_scale = 0.0
@@ -24,7 +26,7 @@ texture = ExtResource("1_usg0q")
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Right Wall" type="RigidBody2D" parent="."]
-position = Vector2(135, 375)
+position = Vector2(250, 0)
 collision_layer = 3
 collision_mask = 3
 gravity_scale = 0.0
@@ -41,7 +43,7 @@ scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Left Wall" type="RigidBody2D" parent="."]
-position = Vector2(615, 375)
+position = Vector2(-250, 0)
 collision_layer = 3
 gravity_scale = 0.0
 freeze = true

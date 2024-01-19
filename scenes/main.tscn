@@ -9,9 +9,12 @@
 script = ExtResource("1_fgrn6")
 
 [node name="UI" parent="." instance=ExtResource("1_w6oxc")]
+offset = Vector2(540, 0)
+transform = Transform2D(1, 0, 0, 1, 540, 0)
 
 [node name="Walls" parent="." instance=ExtResource("2_7ybjf")]
 
 [node name="Player" parent="." instance=ExtResource("3_ew222")]
+position = Vector2(960, 100)
 
 [connection signal="game_start" from="UI" to="." method="_on_ui_game_start"]

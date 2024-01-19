@@ -7,11 +7,12 @@ const SPEED = 300.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var fruitReady = false
 var newFruit
+var hasStarted = false
 @export var FruitScene: PackedScene
 
 func _ready():
-	readyFruit()
 	set_visible(false)
+	readyFruit()
 
 func _physics_process(delta):
 	if not is_visible():
@@ -29,6 +30,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 	if(fruitReady):
+		newFruit.set_visible(true)
 		newFruit.position = position
 		if(Input.is_action_pressed("drop")):
 			print(position)
@@ -72,11 +74,16 @@ func readyFruit():
 	get_parent().add_child(newFruit)
 	newFruit.position = position
 	
+	if(!hasStarted):
+		newFruit.set_visible(false)
+	
 	newFruit.gravity_scale = 0.0;
 	newFruit.freeze = true
 	fruitReady = true
 
 func start():
 	set_visible(true)
+	newFruit.set_visible(true)
+	hasStarted = true
 	# Run when the player begins the game
 
