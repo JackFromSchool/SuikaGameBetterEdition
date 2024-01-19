@@ -12,7 +12,7 @@ scale = Vector2(1.4, 1.4)
 script = ExtResource("1_1b23c")
 
 [node name="Floor" type="RigidBody2D" parent="."]
-position = Vector2(0, 365)
+position = Vector2(-0.714286, -264.286)
 collision_layer = 3
 collision_mask = 3
 gravity_scale = 0.0

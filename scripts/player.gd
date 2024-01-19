@@ -29,13 +29,14 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
-	if(fruitReady):
+	if(fruitReady && newFruit != null):
 		newFruit.set_visible(true)
 		newFruit.position = position
 		if(Input.is_action_pressed("drop")):
 			print(position)
 			print(newFruit.position)
 			
+			newFruit.isHeld = false
 			newFruit.position = position
 			var new_velocity = Vector2(50, 0)
 			newFruit.gravity_scale = 1.0
@@ -63,7 +64,8 @@ func readyFruit():
 
 func start():
 	set_visible(true)
-	newFruit.set_visible(true)
+	if(newFruit != null):
+		newFruit.set_visible(true)
 	hasStarted = true
 	# Run when the player begins the game
 

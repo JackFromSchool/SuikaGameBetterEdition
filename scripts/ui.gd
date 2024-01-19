@@ -24,3 +24,8 @@ func _on_game_start_timer_timeout():
 
 func update_score(score: int):
 	$HUD/Score.text = str(score)
+
+func _on_game_over():
+	$HUD.hide()
+	$Countdown.hide()
+	$Endgame.show()

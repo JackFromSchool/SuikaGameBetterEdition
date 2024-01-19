@@ -5,6 +5,7 @@ var score = 0
 var walls_s
 var player_s
 var secondCheck = false
+var gameOver = false
 
 func _ready():
 	pass
