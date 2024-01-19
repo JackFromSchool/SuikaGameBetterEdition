@@ -44,28 +44,8 @@ func _physics_process(delta):
 			
 			fruitReady = false
 			readyFruit()
-		
-	#if(Input.is_action_pressed("drop") && fruitReady):
-		#spawnFruit()
-		#fruitReady = false
-		#await get_tree().create_timer(1.0).timeout
-		#fruitReady = true
-	
+			
 	move_and_slide()
-
-func prepareFruit():
-	fruitReady = true
-
-func spawnFruit():
-	var newFruit = (FruitScene.instantiate())
-	get_parent().add_child(newFruit)
-	newFruit.position = position
-	
-	var new_velocity = Vector2(50, 0)
-	
-	newFruit.linear_velocity = new_velocity.rotated(randf_range(4.71 - .2, 4.71 + .2))
-	print("hello")
-	newFruit.level = 1
 
 func readyFruit():
 	await get_tree().create_timer(1.0).timeout
