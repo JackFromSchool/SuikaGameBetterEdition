@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://brfvegxhku2cd"]
 
 [ext_resource type="Script" path="res://scripts/physics_area.gd" id="1_1b23c"]
-[ext_resource type="Texture2D" uid="uid://crc427fnjolsl" path="res://assets/Images/istockphoto-1393065816-612x612.jpg" id="1_usg0q"]
+[ext_resource type="Texture2D" uid="uid://dcota6xmesblf" path="res://Suika Game.png" id="2_u3gxg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s68g"]
-size = Vector2(500, 20)
+size = Vector2(429.479, 22.5)
 
 [node name="Walls" type="Node2D"]
 position = Vector2(960, 540)
@@ -12,45 +12,54 @@ scale = Vector2(1.4, 1.4)
 script = ExtResource("1_1b23c")
 
 [node name="Floor" type="RigidBody2D" parent="."]
-position = Vector2(0, 365)
+position = Vector2(-0.714286, -264.286)
+collision_layer = 3
+collision_mask = 3
 gravity_scale = 0.0
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Floor"]
-scale = Vector2(0.8, 0.05)
-texture = ExtResource("1_usg0q")
+position = Vector2(-28.2143, 635)
+scale = Vector2(0.266741, 0.234127)
+texture = ExtResource("2_u3gxg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(-22.1428, 636.429)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Right Wall" type="RigidBody2D" parent="."]
 position = Vector2(250, 0)
+collision_layer = 3
+collision_mask = 3
 gravity_scale = 0.0
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Right Wall"]
-position = Vector2(-5.43012e-06, 1.50004)
+position = Vector2(-43.5716, 77.7915)
 rotation = 1.5708
-scale = Vector2(1.21569, 0.05)
-texture = ExtResource("1_usg0q")
+scale = Vector2(0.368028, 0.213747)
+texture = ExtResource("2_u3gxg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
+position = Vector2(-44.2859, 64.2187)
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Left Wall" type="RigidBody2D" parent="."]
 position = Vector2(-250, 0)
+collision_layer = 3
 gravity_scale = 0.0
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Left Wall"]
-position = Vector2(-3.62005e-06, 1.00002)
+position = Vector2(6.15086, 74.6259)
 rotation = 1.5708
-scale = Vector2(1.22059, 0.05)
-texture = ExtResource("1_usg0q")
+scale = Vector2(0.367619, 0.19799)
+texture = ExtResource("2_u3gxg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Left Wall"]
+position = Vector2(5.7142, 53.6049)
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
