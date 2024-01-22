@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bokqje1j7blkh" path="res://scenes/fruits/pear(5).tscn" id="2_qpnks"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
+radius = 16.298
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10
@@ -17,8 +18,8 @@ scale = Vector2(4, 4)
 shape = SubResource("CircleShape2D_labvx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
-position = Vector2(-1, -8)
-scale = Vector2(0.175, 0.175)
+position = Vector2(-2.99998, -6.99999)
+scale = Vector2(0.2695, 0.2775)
 texture = ExtResource("2_43k04")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
