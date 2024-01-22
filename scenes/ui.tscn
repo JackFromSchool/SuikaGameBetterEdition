@@ -153,10 +153,10 @@ offset_bottom = 2077.0
 
 [node name="Score" type="Label" parent="HUD"]
 layout_mode = 0
-offset_left = 1557.0
-offset_top = 207.0
-offset_right = 1701.0
-offset_bottom = 303.0
+offset_left = 1117.0
+offset_top = -782.0
+offset_right = 1261.0
+offset_bottom = -686.0
 theme_override_fonts/font = ExtResource("4_hpdad")
 theme_override_font_sizes/font_size = 70
 text = "0"

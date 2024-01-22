@@ -33,24 +33,20 @@ func _physics_process(delta):
 		newFruit.set_visible(true)
 		newFruit.position = position + Vector2(-40, 15)
 
-	if(Input.is_action_pressed("drop")):
-		print(position)
-		print(newFruit.position)
+		if(Input.is_action_pressed("drop")):
+			print(position)
+			print(newFruit.position)
 
-		newFruit.isHeld = false
-		newFruit.position = position + Vector2(-40, 15)
+			newFruit.isHeld = false
+			newFruit.position = position + Vector2(-40, 15)
 
-		var new_velocity = Vector2(50, 0)
-		newFruit.gravity_scale = 1.0
-		newFruit.freeze = false
-		newFruit.linear_velocity = new_velocity.rotated(randf_range(4.71 - .2, 4.71 + .2))
+			var new_velocity = Vector2(50, 0)
+			newFruit.gravity_scale = 1.0
+			newFruit.freeze = false
+			newFruit.linear_velocity = new_velocity.rotated(randf_range(4.71 - .2, 4.71 + .2))
 
-		
-
-		newFruit.elasticity = 0.5  
-
-		fruitReady = false
-		readyFruit()
+			fruitReady = false
+			readyFruit()
 			
 	move_and_slide()
 
