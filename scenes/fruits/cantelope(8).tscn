@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://87afh608psg2" path="res://assets/fruits/8.png" id="2_puuwj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
+radius = 20.2502
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10
@@ -11,12 +12,13 @@ contact_monitor = true
 script = ExtResource("1_ie8hl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
 scale = Vector2(12, 12)
 shape = SubResource("CircleShape2D_labvx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
-position = Vector2(0, -15)
-scale = Vector2(0.525, 0.525)
+position = Vector2(4, -24)
+scale = Vector2(1.0205, 1.0385)
 texture = ExtResource("2_puuwj")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
