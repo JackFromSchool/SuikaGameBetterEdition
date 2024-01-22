@@ -1,7 +1,7 @@
 extends RigidBody2D 
 
 var level = 1
-var isHeld = false
+var isHeld = true
 @export var FruitScene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
@@ -14,6 +14,7 @@ func _process(delta):
 
 
 func _on_body_entered(body):
+	print(isHeld)
 	if(isHeld):
 		get_parent().gameOver = true
 		print("game is over")
