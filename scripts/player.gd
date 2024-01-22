@@ -56,6 +56,7 @@ func readyFruit():
 	newFruit = (FruitScene.instantiate())
 	get_parent().add_child(newFruit)
 	newFruit.position = position
+	newFruit.isHeld = true
 	
 	if(!hasStarted):
 		newFruit.set_visible(false)
