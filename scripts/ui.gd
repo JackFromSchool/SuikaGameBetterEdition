@@ -10,6 +10,9 @@ func _ready():
 
 func _process(delta):
 	if $Countdown.visible:
+		if Input.is_action_pressed("skip_timer"):
+			$Countdown/GameStartTimer.stop()
+			$Countdown/GameStartTimer.emit_signal("timeout")
 		$Countdown/GameStart.text = str(ceilf($Countdown/GameStartTimer.time_left))
 
 func _on_game_start_pressed():
