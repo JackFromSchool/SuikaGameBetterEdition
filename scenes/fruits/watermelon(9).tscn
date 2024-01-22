@@ -12,6 +12,7 @@ contact_monitor = true
 script = ExtResource("1_mji8u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 41)
 scale = Vector2(15, 15)
 shape = SubResource("CircleShape2D_labvx")
 
@@ -19,5 +20,7 @@ shape = SubResource("CircleShape2D_labvx")
 position = Vector2(1, -3.8147e-06)
 scale = Vector2(1.465, 1.4225)
 texture = ExtResource("2_polw5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
