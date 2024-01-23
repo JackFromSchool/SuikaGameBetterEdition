@@ -34,10 +34,9 @@ func _physics_process(delta):
 		newFruit.position = position + Vector2(-40, 15)
 
 		if(Input.is_action_pressed("drop")):
-			print(position)
-			print(newFruit.position)
-
+			
 			newFruit.isHeld = false
+			print(newFruit.isHeld)
 			newFruit.position = position + Vector2(-40, 15)
 
 			var new_velocity = Vector2(50, 0)
@@ -62,6 +61,7 @@ func readyFruit():
 	
 	newFruit.gravity_scale = 0.0;
 	newFruit.freeze = true
+	newFruit.isHeld = true;
 	fruitReady = true
 
 func start():
