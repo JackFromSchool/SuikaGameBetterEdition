@@ -14,6 +14,7 @@ func _process(delta):
 
 
 func _on_body_entered(body):
+	print(isHeld)
 	if(isHeld):
 		get_parent().gameOver = true
 		print("game is over")

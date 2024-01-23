@@ -1,12 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1mk4en5s42k8"]
+[gd_scene load_steps=4 format=3 uid="uid://b1mk4en5s42k8"]
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_17iky"]
 [ext_resource type="PackedScene" uid="uid://bdby85wgyfvws" path="res://scenes/fruits/cantelope(8).tscn" id="2_dbxmu"]
 [ext_resource type="Texture2D" uid="uid://drtkask3tu8ea" path="res://assets/fruits/7.png" id="2_sysdp"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uq2gc"]
-radius = 20.8
-height = 57.8667
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10
@@ -14,14 +10,13 @@ contact_monitor = true
 script = ExtResource("1_17iky")
 FruitScene = ExtResource("2_dbxmu")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3.8147e-06, -2)
-scale = Vector2(15, 15)
-shape = SubResource("CapsuleShape2D_uq2gc")
-
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
 position = Vector2(2, -79)
 scale = Vector2(1.60888, 1.91356)
 texture = ExtResource("2_sysdp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 398)
+polygon = PackedVector2Array(16, -2, 133, -16, 228, -78, 265, -164, 288, -338, 275, -477, 233, -598, 148, -680, 188, -710, 185, -734, 132, -737, 157, -817, 59, -785, 30, -912, -71, -793, -152, -809, -139, -742, -198, -705, -131, -682, -240, -549, -278, -383, -277, -238, -246, -95, -167, -27, -4, -2)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
