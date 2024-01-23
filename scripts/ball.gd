@@ -1,7 +1,7 @@
 extends RigidBody2D 
 
 var level = 1
-var isHeld = true
+var isHeld = false
 @export var FruitScene: PackedScene
 
 # Called when the node enters the scene tree for the first time.
