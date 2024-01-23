@@ -18,5 +18,6 @@ func _on_body_entered(body):
 	if(isHeld):
 		get_parent().gameOver = true
 		print("game is over")
-	if(body.get_groups().has("SpawnedFruit") && (body.level == level)):
-		get_parent().dualInputDelay(FruitScene.instantiate(), body, self)
+	else:
+		if(body.get_groups().has("SpawnedFruit") && (body.level == level)):
+			get_parent().dualInputDelay(FruitScene.instantiate(), body, self)

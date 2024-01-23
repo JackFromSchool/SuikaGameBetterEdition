@@ -60,8 +60,8 @@ func readyFruit():
 		newFruit.set_visible(false)
 	
 	newFruit.gravity_scale = 0.0;
+	newFruit.isHeld = true
 	newFruit.freeze = true
-	newFruit.isHeld = true;
 	fruitReady = true
 
 func start():
