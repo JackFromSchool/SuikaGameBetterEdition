@@ -8,14 +8,14 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var fruitReady = false
 var newFruit
 var hasStarted = false
+var disabled = false
 @export var FruitScene: PackedScene
 
 func _ready():
 	set_visible(false)
-	readyFruit()
 
 func _physics_process(delta):
-	if not is_visible():
+	if (not is_visible()) or disabled:
 		return
 	
 	var direction = Vector2.ZERO
@@ -65,9 +65,14 @@ func readyFruit():
 	fruitReady = true
 
 func start():
+	position = Vector2(905, 55)
 	set_visible(true)
 	if(newFruit != null):
 		newFruit.set_visible(true)
 	hasStarted = true
+	disabled = false
+	readyFruit()
 	# Run when the player begins the game
 
+func end():
+	disabled = true

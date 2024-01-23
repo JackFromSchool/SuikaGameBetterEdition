@@ -28,7 +28,6 @@ texture = ExtResource("2_u3gxg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
 position = Vector2(-22.1428, 633.572)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="Right Wall" type="RigidBody2D" parent="."]

@@ -11,7 +11,12 @@ func _ready():
 	pass
 
 func _process(delta):
-	pass
+	if gameOver:
+		$Player.end()
+		$UI.game_over()
+		for node in get_children():
+			if node.get_groups().has("SpawnedFruit"):
+				node.queue_free()
 
 func _on_ui_game_start():
 	$Walls.start()

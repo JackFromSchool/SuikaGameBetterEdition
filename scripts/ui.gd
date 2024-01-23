@@ -20,14 +20,17 @@ func _process(delta):
 func _on_game_start_pressed():
 	$MainMenu.hide()
 	$BackgroundImage.hide()
+	$Endgame.hide()
 	$Countdown.show()
 	$Countdown/GameStartTimer.start()
+	get_parent().gameOver = false
 	
 func _on_game_start_2_pressed():
 	$MainMenu.hide()
 	$BackgroundImage.hide()
 	$Countdown.show()
 	$Countdown/GameStartTimer.start()
+
 func _on_game_start_timer_timeout():
 	$Countdown.hide()
 	$HUD.show()
@@ -36,10 +39,8 @@ func _on_game_start_timer_timeout():
 func update_score(score: int):
 	$HUD/Score.text = str(score)
 
-func _on_game_over():
+func game_over():
 	$HUD.hide()
 	$Countdown.hide()
 	$Endgame.show()
-
-
 
