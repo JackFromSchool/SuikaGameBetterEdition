@@ -11,9 +11,13 @@ func _ready():
 	pass
 
 func _process(delta):
+	if Input.is_action_pressed("escape_shortcut"):
+		gameOver = true
 	if gameOver:
 		$Player.end()
 		$UI.game_over()
+		score = 0
+		$UI.update_score(score)
 		for node in get_children():
 			if node.get_groups().has("SpawnedFruit"):
 				node.queue_free()

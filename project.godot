@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Suika Game"
+config/name="Suika Game New Years Edition"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://assets/images/fruits/1.png"
 
 [display]
 
