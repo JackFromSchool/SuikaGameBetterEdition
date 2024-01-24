@@ -3,18 +3,18 @@
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_ie8hl"]
 [ext_resource type="Texture2D" uid="uid://87afh608psg2" path="res://assets/fruits/8.png" id="2_puuwj"]
 
-[node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
+[node name="Fruit2" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_ie8hl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
-position = Vector2(4, -24)
+position = Vector2(8, -45)
 scale = Vector2(1.0205, 1.0385)
 texture = ExtResource("2_puuwj")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-125, -265)
-polygon = PackedVector2Array(12, -1, 18, 5, 53, 38, 115, 58, 172, 51, 225, 18, 259, -18, 274, -10, 276, 16, 271, 29, 231, 65, 206, 75, 283, 122, 334, 194, 352, 251, 352, 315, 327, 380, 301, 416, 260, 454, 173, 493, 131, 494, 75, 485, 21, 468, -29, 431, -64, 388, -86, 332, -93, 254, -70, 173, -33, 126, 58, 74, 14, 54, -12, 20, -3, -2)
+polygon = PackedVector2Array(0, -15, 12, -50, 55, -66, 92, -113, 328, -460, -83, -159)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

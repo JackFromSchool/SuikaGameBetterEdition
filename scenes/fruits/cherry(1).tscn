@@ -8,7 +8,6 @@
 radius = 32.9848
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
-freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_xa4d0")
