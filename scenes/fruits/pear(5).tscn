@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dfxmjdl3amq68" path="res://assets/fruits/5.png" id="2_thfnk"]
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
+freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_12fgy")

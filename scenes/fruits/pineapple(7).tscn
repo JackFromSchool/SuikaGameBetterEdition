@@ -5,7 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://drtkask3tu8ea" path="res://assets/fruits/7.png" id="2_sysdp"]
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
-scale = Vector2(0.797151, 0.756869)
+scale = Vector2(0.709898, 0.670502)
+freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_17iky")

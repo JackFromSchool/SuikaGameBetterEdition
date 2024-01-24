@@ -9,12 +9,12 @@ contact_monitor = true
 script = ExtResource("1_ie8hl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
-position = Vector2(8, -45)
-scale = Vector2(1.0205, 1.0385)
+position = Vector2(41.0625, -22.6875)
+scale = Vector2(0.88825, 0.94925)
 texture = ExtResource("2_puuwj")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-125, -265)
-polygon = PackedVector2Array(0, -15, 12, -50, 55, -66, 92, -113, 328, -460, -83, -159)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D"]
+position = Vector2(-0.0703735, 238.807)
+polygon = PackedVector2Array(20.5781, 0.962936, 90.1519, -2.88878, 132.288, -40.4429, 184.223, -95.3298, 199.902, -128.069, 207.741, -163.698, 207.741, -191.623, 208.721, -237.843, 205.781, -280.212, 186.183, -312.951, 156.786, -352.431, 125.429, -365.912, 103.871, -387.097, 76.4331, -396.726, 103.871, -412.133, 132.288, -431.391, 143.067, -467.02, 136.208, -488.204, 118.569, -488.204, 109.75, -481.464, 78.393, -459.316, 48.0157, -440.058, 22.538, -431.391, -35.2768, -429.466, -75.4532, -438.132, -104.851, -464.131, -136.208, -470.871, -131.308, -438.132, -97.9912, -415.985, -82.3126, -398.652, -108.77, -378.43, -189.123, -314.877, -215.581, -240.732, -211.661, -150.217, -142.087, -53.9239, -57.8148, -0.962921)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

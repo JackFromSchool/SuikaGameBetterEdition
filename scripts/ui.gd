@@ -43,4 +43,3 @@ func game_over():
 	$HUD.hide()
 	$Countdown.hide()
 	$Endgame.show()
-

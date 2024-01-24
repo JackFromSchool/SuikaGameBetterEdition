@@ -38,12 +38,14 @@ func _physics_process(delta):
 			newFruit.isHeld = false
 			print(newFruit.isHeld)
 			newFruit.position = position + Vector2(-40, 15)
+			
+			var new_velocity = velocity;
+			newFruit.linear_velocity= new_velocity;
 
-			var new_velocity = Vector2(50, 0)
 			newFruit.gravity_scale = 1.0
 			newFruit.freeze = false
 			newFruit.linear_velocity = new_velocity.rotated(randf_range(4.71 - .2, 4.71 + .2))
-
+			
 			fruitReady = false
 			readyFruit()
 			

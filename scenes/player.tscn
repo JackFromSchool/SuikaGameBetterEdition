@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://byo2xcc6fme2j" path="res://Cloud.png" id="3_qrgw8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5dvg5"]
-size = Vector2(72, 20)
+size = Vector2(156, 20)
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(249, 43)
@@ -15,7 +15,7 @@ script = ExtResource("1_kc0xl")
 FruitScene = ExtResource("2_n4ot5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-41, 0)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_5dvg5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

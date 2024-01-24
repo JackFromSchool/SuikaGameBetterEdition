@@ -5,7 +5,7 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
 
-[node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
+[node name="Fruit2" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_fxrpc")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dcota6xmesblf" path="res://Suika Game.png" id="2_u3gxg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s68g"]
-size = Vector2(461.603, 22.5)
+size = Vector2(451.278, 22.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mqse"]
 size = Vector2(79.6513, 20)
@@ -44,13 +44,13 @@ scale = Vector2(0.368028, 0.213747)
 texture = ExtResource("2_u3gxg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right Wall"]
-position = Vector2(-43.5715, 21.4286)
+position = Vector2(-44.2857, 101.429)
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_1s68g")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Right Wall"]
-position = Vector2(-33.5714, -255)
+position = Vector2(14.2857, -280)
 rotation = 1.5708
 scale = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_6mqse")

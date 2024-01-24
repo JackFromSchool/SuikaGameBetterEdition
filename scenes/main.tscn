@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://tc6tlxfc5b32"]
+[gd_scene load_steps=7 format=3 uid="uid://tc6tlxfc5b32"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_fgrn6"]
 [ext_resource type="PackedScene" uid="uid://co681qg3ov2gi" path="res://scenes/ui.tscn" id="1_w6oxc"]
 [ext_resource type="PackedScene" uid="uid://brfvegxhku2cd" path="res://scenes/physics_area.tscn" id="2_7ybjf"]
 [ext_resource type="PackedScene" uid="uid://7ee4p0ndbcor" path="res://scenes/player.tscn" id="3_ew222"]
-[ext_resource type="Texture2D" uid="uid://tvetnten2rdm" path="res://2.png" id="5_33jcu"]
+[ext_resource type="Texture2D" uid="uid://uv1vho3qctqw" path="res://Background/2.png" id="5_nf2i2"]
+[ext_resource type="AudioStream" uid="uid://c2tx0eo67i2ne" path="res://mixkit-game-ball-tap-2073.wav" id="6_cjcim"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fgrn6")
@@ -17,10 +18,15 @@ position = Vector2(904, 468)
 [node name="Player" parent="." instance=ExtResource("3_ew222")]
 position = Vector2(905, 55)
 
-[node name="Background" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(961, 540.5)
-scale = Vector2(1, 0.997222)
-texture = ExtResource("5_33jcu")
+[node name="Backgorund" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(957.5, 540)
+scale = Vector2(0.498177, 0.497222)
+texture = ExtResource("5_nf2i2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(963, 538)
+stream = ExtResource("6_cjcim")
+volume_db = 9.0
 
 [connection signal="game_start" from="UI" to="." method="_on_ui_game_start"]

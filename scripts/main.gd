@@ -24,6 +24,7 @@ func _on_ui_game_start():
 	
 
 func dualInputDelay(newFruit, body, body2):
+	$AudioStreamPlayer2D.play();
 	if(!secondCheck):
 		secondCheck = true
 		if(body.level == 9):

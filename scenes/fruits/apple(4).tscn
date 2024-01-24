@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bokqje1j7blkh" path="res://scenes/fruits/pear(5).tscn" id="2_qpnks"]
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
+freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_tdg3j")
