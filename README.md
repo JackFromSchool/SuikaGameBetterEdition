@@ -19,6 +19,6 @@ While working on this project we used Godot v4.2.1 stable. It is unlikely that w
 
 ### Contributors
 
-Joshua Holmes
-Siddharth Potta
-John Saenz
+* Joshua Holmes
+* Siddharth Potta
+* John Saenz
