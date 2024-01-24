@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://hs1u14bcub8l"]
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_xy5ij"]
-[ext_resource type="Texture2D" uid="uid://bgwibxswb6gim" path="res://assets/fruits/6.png" id="2_13wyq"]
+[ext_resource type="Texture2D" uid="uid://bgwibxswb6gim" path="res://assets/images/fruits/6.png" id="2_13wyq"]
 [ext_resource type="PackedScene" uid="uid://b1mk4en5s42k8" path="res://scenes/fruits/pineapple(7).tscn" id="2_ry42i"]
+
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 freeze_mode = 1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcota6xmesblf"
-path="res://.godot/imported/Suika Game.png-bc951702c36bf6f87271eb2eb94e032b.ctex"
+uid="uid://bniwqqx8vqifw"
+path="res://.godot/imported/Start.png-ed8bb57f8951ed3a0f5af675499eb3ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Suika Game.png"
-dest_files=["res://.godot/imported/Suika Game.png-bc951702c36bf6f87271eb2eb94e032b.ctex"]
+source_file="res://assets/images/Start.png"
+dest_files=["res://.godot/imported/Start.png-ed8bb57f8951ed3a0f5af675499eb3ec.ctex"]
 
 [params]
 

@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://co681qg3ov2gi"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_g3hr7"]
-[ext_resource type="Texture2D" uid="uid://dcota6xmesblf" path="res://Suika Game.png" id="3_3vjpe"]
-[ext_resource type="Texture2D" uid="uid://5jlgapgdsfdb" path="res://11.png" id="3_qm4if"]
-[ext_resource type="Texture2D" uid="uid://bk1ojg424t42q" path="res://12.png" id="3_qxydj"]
-[ext_resource type="FontFile" uid="uid://brt2nxcvqy3e5" path="res://ALGER.TTF" id="4_hpdad"]
+[ext_resource type="Texture2D" uid="uid://5jlgapgdsfdb" path="res://assets/images/11.png" id="2_sed3x"]
+[ext_resource type="Texture2D" uid="uid://bk1ojg424t42q" path="res://assets/images/12.png" id="3_3lr6x"]
+[ext_resource type="Texture2D" uid="uid://dcota6xmesblf" path="res://assets/images/Suika Game.png" id="3_3vjpe"]
+[ext_resource type="FontFile" uid="uid://brt2nxcvqy3e5" path="res://assets/fonts/ALGER.TTF" id="4_hpdad"]
 [ext_resource type="Texture2D" uid="uid://xif0bk6t678b" path="res://Background/1.png" id="6_frym1"]
-[ext_resource type="AudioStream" uid="uid://cnooxa4o6jvr1" path="res://Sakura-Girl-Peach-chosic.com_.mp3" id="7_lp0x2"]
+[ext_resource type="AudioStream" uid="uid://cnooxa4o6jvr1" path="res://assets/audio/Sakura-Girl-Peach-chosic.com_.mp3" id="7_lp0x2"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_3ahh5"]
 action = &"start_shortcut"
@@ -100,8 +100,8 @@ grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.351796, 0.391815)
 shortcut = SubResource("Shortcut_ucqna")
-texture_normal = ExtResource("3_qm4if")
-texture_hover = ExtResource("3_qxydj")
+texture_normal = ExtResource("2_sed3x")
+texture_hover = ExtResource("3_3lr6x")
 stretch_mode = 0
 
 [node name="Endgame" type="Control" parent="."]

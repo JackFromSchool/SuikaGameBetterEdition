@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://brfvegxhku2cd" path="res://scenes/physics_area.tscn" id="2_7ybjf"]
 [ext_resource type="PackedScene" uid="uid://7ee4p0ndbcor" path="res://scenes/player.tscn" id="3_ew222"]
 [ext_resource type="Texture2D" uid="uid://uv1vho3qctqw" path="res://Background/2.png" id="5_nf2i2"]
-[ext_resource type="AudioStream" uid="uid://c2tx0eo67i2ne" path="res://mixkit-game-ball-tap-2073.wav" id="6_cjcim"]
+[ext_resource type="AudioStream" uid="uid://c2tx0eo67i2ne" path="res://assets/audio/mixkit-game-ball-tap-2073.wav" id="6_cjcim"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fgrn6")

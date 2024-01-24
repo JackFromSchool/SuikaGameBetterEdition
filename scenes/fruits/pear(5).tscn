@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_12fgy"]
 [ext_resource type="PackedScene" uid="uid://hs1u14bcub8l" path="res://scenes/fruits/peach(6).tscn" id="2_8vofk"]
-[ext_resource type="Texture2D" uid="uid://dfxmjdl3amq68" path="res://assets/fruits/5.png" id="2_thfnk"]
+[ext_resource type="Texture2D" uid="uid://dfxmjdl3amq68" path="res://assets/images/fruits/5.png" id="2_thfnk"]
+
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 freeze_mode = 1

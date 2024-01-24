@@ -2,13 +2,12 @@
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_lripg"]
 [ext_resource type="PackedScene" uid="uid://b3fsm42nojkpi" path="res://scenes/fruits/apple(4).tscn" id="2_tgpkp"]
-[ext_resource type="Texture2D" uid="uid://rmkqvi8xenee" path="res://assets/fruits/3.png" id="3_h8tks"]
+[ext_resource type="Texture2D" uid="uid://rmkqvi8xenee" path="res://assets/images/fruits/3.png" id="3_h8tks"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
 radius = 27.3415
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
-freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_lripg")

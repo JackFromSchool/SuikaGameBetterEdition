@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_17iky"]
 [ext_resource type="PackedScene" uid="uid://bdby85wgyfvws" path="res://scenes/fruits/cantelope(8).tscn" id="2_dbxmu"]
-[ext_resource type="Texture2D" uid="uid://drtkask3tu8ea" path="res://assets/fruits/7.png" id="2_sysdp"]
+[ext_resource type="Texture2D" uid="uid://drtkask3tu8ea" path="res://assets/images/fruits/7.png" id="2_sysdp"]
+
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
 scale = Vector2(0.709898, 0.670502)

@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://bdby85wgyfvws"]
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_ie8hl"]
-[ext_resource type="Texture2D" uid="uid://87afh608psg2" path="res://assets/fruits/8.png" id="2_puuwj"]
+[ext_resource type="Texture2D" uid="uid://87afh608psg2" path="res://assets/images/fruits/8.png" id="2_puuwj"]
+
 
 [node name="Fruit2" type="RigidBody2D" groups=["SpawnedFruit"]]
 max_contacts_reported = 10

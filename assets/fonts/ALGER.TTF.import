@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://brt2nxcvqy3e5"
-path="res://.godot/imported/ALGER.TTF-f22739c62555397583dd96b4e9736faa.fontdata"
+path="res://.godot/imported/ALGER.TTF-9e69f26ec71137edcfe89182db496fd5.fontdata"
 
 [deps]
 
-source_file="res://ALGER.TTF"
-dest_files=["res://.godot/imported/ALGER.TTF-f22739c62555397583dd96b4e9736faa.fontdata"]
+source_file="res://assets/fonts/ALGER.TTF"
+dest_files=["res://.godot/imported/ALGER.TTF-9e69f26ec71137edcfe89182db496fd5.fontdata"]
 
 [params]
 

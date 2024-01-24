@@ -1,23 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyfpoohh7weai"]
+[gd_scene load_steps=5 format=3 uid="uid://dyfpoohh7weai"]
 
 [ext_resource type="Script" path="res://scripts/ball.gd" id="1_82w08"]
 [ext_resource type="PackedScene" uid="uid://vouq1pjdwihp" path="res://scenes/fruits/orange(3).tscn" id="2_vy2d7"]
-[ext_resource type="Texture2D" uid="uid://c1tshs1utthvi" path="res://assets/fruits/2.png" id="3_hrshy"]
+[ext_resource type="Texture2D" uid="uid://c1tshs1utthvi" path="res://assets/images/fruits/2.png" id="3_hrshy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_labvx"]
+radius = 24.0208
 
 [node name="Fruit" type="RigidBody2D" groups=["SpawnedFruit"]]
-freeze_mode = 1
 max_contacts_reported = 10
 contact_monitor = true
 script = ExtResource("1_82w08")
 FruitScene = ExtResource("2_vy2d7")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_labvx")
+
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["SpawnedFruit"]]
 position = Vector2(6, 1)
 scale = Vector2(0.227, 0.209)
 texture = ExtResource("3_hrshy")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-2, 43)
-polygon = PackedVector2Array(10, 4, 22, -9, 35, -13, 35, -13, 40, -17, 43, -22, 44, -28, 43, -33, 43, -36, 49, -43, 50, -51, 46, -62, 42, -65, 34, -70, 36, -74, 36, -76, 36, -79, 35, -82, 28, -84, 26, -86, 18, -83, 15, -83, 19, -90, 18, -93, 13, -89, 9, -80, 4, -87, 1, -87, -11, -92, -13, -90, -25, -87, -22, -77, -26, -74, -32, -68, -34, -60, -34, -54, -31, -47, -34, -41, -34, -32, -31, -23, -21, -15, -17, -3, -10, 2, -6, 4, 1, 5, 6, 5)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
